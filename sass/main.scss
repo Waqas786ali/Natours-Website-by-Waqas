@@ -1,0 +1,253 @@
+
+ // --------------------------------------------------------------------------------------Grid-test BY Me
+    // .main1{
+    //     position: relative;
+    //     height: 100vh;
+    //     background-color: paleturquoise;
+
+    //     .col-1-of-2{
+    //         height: 8%;
+    //         width: calc(100% - 55%);
+    //         background-color: chocolate;
+    //         display: inline-block;
+    //         margin-left: 3.2%;
+    //         margin-top: 3%;
+    //     }
+        
+    //     .col-1-of-3{
+    //         height: 8%;
+    //         width: calc(100% - 71.1%);
+    //         background-color: chocolate;
+    //         display: inline-block;
+    //         margin-left: 3.2%;
+    //         margin-top: 3%;
+    //     }
+
+    //     .col-1-of-4{
+    //         height: 8%;
+    //         width: calc(100% - 79.2%);
+    //         background-color: chocolate;
+    //         display: inline-block;
+    //         margin-left: 3.2%;
+    //         margin-top: 3%;
+    //     }
+
+    //     .col-1-of-1{
+    //         height: 8%;
+    //         width: calc(100% - 30.9%);
+    //         background-color: chocolate;
+    //         display: inline-block;
+    //         margin-left: 3.2%;
+    //         margin-top: 3%;
+    //     }
+        
+    //     .col-2-of-3{
+    //         height: 8%;
+    //         width: calc(100% - 39%);
+    //         background-color: chocolate;
+    //         display: inline-block;
+    //         margin-left: 3.2%;
+    //         margin-top: 3%;
+    //     }
+    // }
+ //  -----------------------------------------------------------------------------------------------------Grid-test  BY Sir
+ //Grid
+
+//   $max-width: 114rem;
+//   $gutter-vertical: 8rem;
+//   $gutter-horizontal: 6rem; 
+
+//   @mixin clearfix {
+//       &::after{
+//           content: "";
+//           display: table;
+//           clear: both;
+//       }
+//   }
+
+//     .grid-test{
+
+//         .row{
+//             max-width: $max-width;
+//             background-color: #eee;
+//             margin: 0 auto;
+//                 &:not(:last-child){
+//                     margin-bottom: $gutter-vertical;
+//                 }
+//             @include clearfix();
+
+//             [class^="col-"]{
+//                 background-color: orangered;
+//                 float: left;
+//                 padding-left: 2rem;
+//                 font-size: 1rem;
+//                 color: white;
+//                 &:not(:last-child){
+//                     margin-right: $gutter-horizontal;
+//                 }
+//             }
+
+//                 .col-1-of-2{
+//                     width: calc((100% - #{$gutter-horizontal}) / 2);
+//                 }
+
+//                 .col-1-of-3{
+//                     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+//                 }
+
+//                 .col-1-of-4{
+//                     width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+//                 }
+
+//                 .col-2-of-3{
+//                     width: calc( 2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});                   
+//                 }
+
+//                 .col-2-of-4{
+//                     width: calc( 2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});                  
+//                 }
+
+//                 .col-3-of-4{
+//                     width: calc( 3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});                  
+//                 }
+
+//                 .col-1-of-5{
+//                     width: calc((100% - 4 * #{$gutter-horizontal}) / 5);                  
+//                 }
+
+//                 .col-4-of-5{
+//                     width: calc( 4 * ((100% - 4 * #{$gutter-horizontal}) / 5) + 3 * #{$gutter-horizontal});
+//                 }
+//             }        
+//     }
+
+
+      
+
+@import 'abstract/functions';
+@import 'abstract/mixin';
+@import 'abstract/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/bg-video';
+@import 'components/button';
+@import 'components/card';
+@import 'components/composition';
+@import 'components/feature-box';
+@import 'components/form';
+@import 'components/popup';
+@import 'components/story';
+
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
+
+@import 'pages/home';
+
+// .section-tours{
+//    position: relative;
+//    height: 80vh;
+//    .row{
+//       max-width: 98%;
+//       background-color: white;
+//       h1{
+//          font-size: 3.5rem;
+//          background: linear-gradient(to right, rgba(72, 255, 0, 0.9), rgba(23, 151, 76, 0.9));
+//          background-clip: text;
+//          -webkit-background-clip: text;
+//          color: transparent;
+//          font-weight: 700;
+//          letter-spacing: 1.2px;
+//          margin-top: 5%;
+//          text-align: center;
+//          &:hover{
+//             transform: skewY(2deg) skewX(15deg) scale(1.1);
+//             transition: transform .5s;
+//             text-shadow: 20px 20px 20px black;
+//          }
+//       }
+//    }
+//    .col-1-of-2{
+//       padding-top: 2%;
+//       background-color: white;
+//       color: #777;
+//       &:first-child{
+//          padding-left: 10%;
+//       }
+      
+//       h2{
+//          font-size: 2rem;
+//          padding-top: 5%;
+//       }
+
+//       p{
+//          font-size: 1.7rem;
+//       }
+
+//       img{
+//          height: 35%;
+//          width: 22%;
+//          border-radius: 3px;
+//          &:hover{
+//             outline: 1.5rem solid #55c57a;
+//             padding: 10px;
+//          }
+//       }
+
+//       .composition-pic1{
+//          position: absolute;
+
+//          &:hover{
+//             transform: scale(1.2,1.2);
+//             z-index: 1;
+//             transition: all .5s;
+//          }
+//       }
+
+//       .composition-pic2{
+//          position: absolute;
+//          left: 70%;
+//          top: 35%;
+//          &:hover{
+//             transform: scale(1.2,1.2);
+//             z-index: 1;
+//             transition: all .5s;
+//          }
+//       }
+
+//       .composition-pic3{
+//          position: absolute;
+//          left: 60%;
+//          top: 50%;
+//          &:hover{
+//             transform: scale(1.2,1.2);
+//             z-index: 1;
+//             transition: all .5s;
+//          }
+//       }
+      
+//       a{
+//          text-decoration: none;
+//          color: #55c57a;
+//          padding: 2px 2px;
+//          border-bottom: 2px solid #55c57a;
+//          font-size: 1.8rem;
+//          position: absolute;
+//          top: 68%;
+//          &:hover{
+//             background-color: #55c57a;
+//             color: white;
+//          }
+
+//       }
+
+//    }
+// }
+
+
+  
